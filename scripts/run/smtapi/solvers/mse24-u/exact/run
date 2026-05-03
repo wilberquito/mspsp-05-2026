@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/media/nas/scratch/solvers/maxsat/mse24-w/Exact/bin/Exact $1 --verbosity=0 --format=wcnf --print-uniform=0 --print-sol --bits-overflow=30 --bits-reduced=25

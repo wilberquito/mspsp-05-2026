@@ -1,0 +1,19 @@
+#!/bin/bash
+
+if [ $# -lt 5 ]; then
+    echo "Required <instance_path> <implied-1> <implied-2> <implied-3> <implied-4>" 1>&2; exit 2
+fi
+
+instance_path=$1
+implied_1=$2
+implied_2=$3
+implied_3=$4
+implied_4=$5
+
+./modules/scheduling_solvers/bin/release/mspsp2smt \
+    -e=1 -f=wcnf -E=timemaxsat \
+    --implied1=${implied_1} \
+    --implied2=${implied_2} \
+    --implied3=${implied_3}  \
+    --implied4=${implied_4} \
+    --print-nonoptimal=0 ${instance_path}

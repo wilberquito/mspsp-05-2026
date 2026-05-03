@@ -1,0 +1,6 @@
+implied_bitmask_short,evalmaxsat med.,exact med.,evalmaxsat boost med. %,exact boost med. %
+000,600.0,600.0,0.0,0.0
+100,600.0,600.0,0.0,0.0
+010,32.44,341.04,94.59,43.16
+110,31.38,232.81,94.77,61.2
+001,37.1,120.12,93.82,79.98

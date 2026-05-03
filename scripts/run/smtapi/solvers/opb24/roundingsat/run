@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/media/nas/scratch/solvers/opb/opb24/RoundingSat/bin/roundingsat $1 --print-sol=1 --verbosity=1

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+java -jar /media/nas/scratch/solvers/opb/sat4j/sat4j-pb.jar $1

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# This script extracts the number of variables that a pb solver tries to minizime.
+# They represent the time indexed variables that represent the "has started" of the last activity in the schedule.
+
+if [ "$#" -ne 1 ]; then
+    echo "Usage: $0 <encoding_output_file>" 1>&2
+    exit 1
+fi
+
+set -o pipefail
+
+encoding_output_file=$1
+
+cat $encoding_output_file | grep '#obj_size=' | tail -n 1 | cut -d '=' -f 2

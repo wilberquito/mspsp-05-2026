@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/media/nas/scratch/solvers/maxsat/mse24-u/EvalMaxSAT_2024/bin/EvalMaxSAT --timeSCIP=7200 --noSimplify --noSaveCores $1

@@ -1,0 +1,24 @@
+#!/bin/bash
+
+if [ "$#" -ne 8 ]; then
+    echo "Usage: $0 <instance_path> <model_path> <validated_model_path> <implied_1> <implied_2> <implied_3> <implied_4> <pb-like>"
+    exit 1
+fi
+
+instance_path=$1
+model_path=$2
+validated_model_path=$3
+implied_1=$4
+implied_2=$5
+implied_3=$6
+implied_4=$7
+pb_like=$8
+
+./modules/scheduling_solvers/bin/release/checkmspsp2 \
+    -E=timeopb --print=1 --print-nonoptimal=0 \
+    --implied1=${implied_1} \
+    --implied2=${implied_2} \
+    --implied3=${implied_3} \
+    --implied4=${implied_4} \
+    --pblike=${pb_like} \
+    ${instance_path} ${model_path} ${validated_model_path}

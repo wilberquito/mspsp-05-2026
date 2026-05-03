@@ -1,0 +1,5 @@
+#!/bin/bash
+
+module swap gnu9 gnu12/12.4.0 > /dev/null 2>/dev/null
+
+/media/nas/scratch/solvers/maxsat/mse24-w/Pacose24/bin/Pacose $1

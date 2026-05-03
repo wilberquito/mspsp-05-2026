@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Script for extracting the last optimum from a solver output file.
+# It assumes that the optimum is printed in lines starting with 'o '.
+
+# If no optim is verified, it will take the last optimum found.
+
+if [ "$#" -ne 1 ]; then
+    echo "Usage: $0 <solver_output_file>"
+    exit 1
+fi
+
+# If any command fails, the script will exit immediately with a non-zero status.
+set -o pipefail
+
+solver_output_file=$1
+
+# All solvers output the verified optimum starting with '^o'
+cat $solver_output_file | grep '^o ' | tail -n 1 | cut -d ' ' -f 2
+
+# If not optimum is verified, the last optimum is reported
+if [ $? -ne 0 ]; then
+    grep '^c bounds' $solver_output_file | tail -n 1 | awk '{print $3}'
+fi

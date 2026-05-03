@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/media/nas/scratch/solvers/maxsat/mse24-u/UWrMaxSAT-SCIP-MaxPre/bin/uwrmaxsat -v0 -no-bin -no-sat -no-par -maxpre-time=60 -no-scip -m -bm $1

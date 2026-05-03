@@ -1,0 +1,3 @@
+[submodule "src/smtapi"]
+	path = src/smtapi
+	url = git@github.com:udg-lai/smtapi.git

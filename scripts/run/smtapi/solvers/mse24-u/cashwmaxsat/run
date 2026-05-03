@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/media/nas/scratch/solvers/maxsat/mse24-u/CASHWMaxSAT-DisjCom-S15/bin/cashwmaxsat-disjcom -v0 -no-bin -no-sat -m -bm -no-par -no-scip $1

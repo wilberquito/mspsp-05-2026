@@ -1,0 +1,71 @@
+smtapi:
+  encoders:
+    maxsat:
+      run: "./scripts/run/smtapi/encoders/maxsat/run"
+    opb:
+      run: "./scripts/run/smtapi/encoders/opb/run"
+    sat:
+      run: "./scripts/run/smtapi/encoders/sat/run"
+    pb:
+      run: "./scripts/run/smtapi/encoders/pb/run"
+
+  substract_model:
+    run: "./scripts/run/smtapi/substract_model/run"
+
+  substract_last_optim:
+    run: "./scripts/run/smtapi/substract_last_optim/run"
+
+  substract_fn_obj_size:
+    run: "./scripts/run/smtapi/substract_fn_obj_size/run"
+
+  model_checkers:
+    maxsat:
+      run: "./scripts/run/smtapi/model_checkers/maxsat/run"
+    opb:
+      run: "./scripts/run/smtapi/model_checkers/opb/run"
+    sat:
+      run: "./scripts/run/smtapi/model_checkers/sat/run"
+    pb:
+      run: "./scripts/run/smtapi/model_checkers/pb/run"
+
+  solvers:
+    maxsat:
+      cashwmaxsat:
+        run: "./scripts/run/smtapi/solvers/mse24-u/cashwmaxsat/run"
+
+      evalmaxsat:
+        run: "./scripts/run/smtapi/solvers/mse24-u/evalmaxsat/run"
+
+      exact:
+        run: "./scripts/run/smtapi/solvers/mse24-u/exact/run"
+
+      maxcdcl:
+        run: "./scripts/run/smtapi/solvers/mse24-u/maxcdcl/run"
+
+      pacose:
+        run: "./scripts/run/smtapi/solvers/mse24-u/pacose/run"
+
+      scip:
+        run: "./scripts/run/smtapi/solvers/mse24-u/scip/run"
+
+      uwrmaxsat:
+        run: "./scripts/run/smtapi/solvers/mse24-u/uwrmaxsat/run"
+
+    opb:
+      roundingsat:
+        run: "./scripts/run/smtapi/solvers/opb24/roundingsat/run"
+        origin: "https://gitlab.com/MIAOresearch/software/roundingsat"
+        commit: "a5c28f99"
+        description: "OPB solver, competition binary not found"
+
+      sat4jpb:
+        run: "./scripts/run/smtapi/solvers/opb24/sat4j/run"
+        origin: "https://gitlab.ow2.org/sat4j/sat4j"
+        commit: "6a9163775efbf8b61dcf5a3a21e3ec41b6af7d46"
+        description: "OPB solver, competition binary not found"
+
+      exactpb:
+        run: "./scripts/run/smtapi/solvers/opb24/exact/run"
+        origin: "https://gitlab.ow2.org/sat4j/sat4://gitlab.com/nonfiction-software/exact"
+        commit: "a2ae6cae0fa28936a8d978c539df81a23b04b"
+        description: "OPB solver, competition binary not found"

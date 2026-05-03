@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/media/nas/scratch/solvers/opb/opb24/Exact/bin/exact $1 --print-sol=1 --print-uniform=0

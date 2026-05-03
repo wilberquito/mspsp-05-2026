@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# This script extracts the model from a solver output file. It assumes that the model is printed in lines starting with 'v '.
+
+if [ "$#" -ne 1 ]; then
+    echo "Usage: $0 <solver_output_file>"
+    exit 1
+fi
+
+solver_output_file=$1
+
+cat $solver_output_file | grep '^v '

@@ -1,0 +1,8 @@
+family,count,unique,top,freq
+set-1a,216,216,./modules/rcpsp-instances/MSPSP/set-1a/inst_set1a_sf0.5_nc1.5_n20_m10_00.dzn.txt,1
+set-1b,216,216,./modules/rcpsp-instances/MSPSP/set-1b/inst_set1b_sf0.5_nc1.5_n40_m20_00.dzn.txt,1
+set-2a,110,110,./modules/rcpsp-instances/MSPSP/set-2a/inst_set2a_sf0_nc1.5_n25_l3_m10_00.dzn.txt,1
+set-2b,77,77,./modules/rcpsp-instances/MSPSP/set-2b/inst_set2b_sf0_nc1.5_n30_l12_m11_00.dzn.txt,1
+set-2c,91,91,./modules/rcpsp-instances/MSPSP/set-2c/inst_set2c_sf0_nc1.5_n30_l10_m15_00.dzn.txt,1
+set-3a,216,216,./modules/rcpsp-instances/MSPSP/set-3a/inst_set1_sf0.5_nc1.5_n80_m30_00.dzn.txt,1
+set-3b,216,216,./modules/rcpsp-instances/MSPSP/set-3b/inst_set1_sf0.5_nc1.5_n60_m30_00.dzn.txt,1
