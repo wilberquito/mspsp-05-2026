@@ -2,6 +2,60 @@
 
 This repository contains the results of MaxSAT and PBO encoding for the MSPSP with the analysis of the implied constraints (I, II, III).
 
+## Example
+
+<img width="723" height="293" alt="image" src="https://github.com/user-attachments/assets/3ac1c0ff-f1d9-45f2-b3cf-bc789ee8c57b" />
+
+<br/>
+
+Instance representation:
+
+```text
+ 9
+ 0 2 1 1 1 3 2 1 0
+
+ 3
+ 0 0 0
+ 0 1 0
+ 0 0 2
+ 0 1 0
+ 0 0 1
+ 1 0 2
+ 1 3 0
+ 1 1 0
+ 0 0 0
+
+ 4
+ 1 1 1
+ 0 1 1
+ 1 1 0
+ 1 0 1
+
+ 10
+ 1 1 2 2 3 4 5 6 7 8
+ 2 3 6 4 5 7 7 8 8 9
+
+```
+
+An optimal solution:
+
+```text
+v S_0:0; S_1:0; S_2:0; S_3:2; S_4:1; S_5:2; S_6:5; S_7:7; S_8:8;
+
+A:1:2:1;
+A:2:0:2; A:2:1:2; A:2:3:2;
+A:3:2:1;
+A:4:1:2;
+A:5:0:0; A:5:1:2; A:5:3:2;
+A:6:0:1; A:6:1:1; A:6:2:1; A:6:3:0;
+A:7:0:0; A:7:1:1;
+```
+
+<img width="716" height="198" alt="image" src="https://github.com/user-attachments/assets/a2213841-2635-4bfd-945c-18eabf3c9311" />
+
+
+## Metrics
+
 (Values in seconds; 600s timeout). The bitmask denotes active implied constraints. **Δ t.o.** represents the absolute reduction in timeouts compared to the `000` baseline.
 
 | Set | Mask | Solver | Q1 | med. | Q3 | avg. | t.o. | Δ t.o. |
